@@ -1,0 +1,15 @@
+{
+  "name": "instrument-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja virtual de instrumentos com catálogo e compras fictícias.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "mysql2": "^3.11.5"
+  }
+}

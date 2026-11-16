@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instrumentos que aproximam você da sua música.">
+  <title>Harmonia Instrumentos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { ink: '#17202a', amber: '#e8a317', cream: '#fffaf0' } } }
+    };
+  </script>
+</head>
+<body class="bg-cream text-ink">
+  <header class="sticky top-0 z-10 border-b border-amber/20 bg-cream/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-4" aria-label="Navegação principal">
+      <a href="#/" class="text-xl font-black tracking-tight">Harmonia<span class="text-amber">.</span></a>
+      <div id="category-links" class="flex flex-wrap gap-3 text-sm font-semibold"></div>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="#/sobre" class="hover:text-amber">Sobre</a>
+        <a href="#/contato" class="hover:text-amber">Contato</a>
+        <a href="#/conta" id="account-link" class="rounded-full bg-ink px-4 py-2 text-white">Entrar</a>
+      </div>
+    </nav>
+  </header>
+  <main id="app" class="mx-auto min-h-screen max-w-6xl px-6 py-10"></main>
+  <footer class="border-t border-amber/20 px-6 py-8 text-center text-sm text-slate-600">
+    <p>Harmonia Instrumentos — uma experiência de compra totalmente fictícia.</p>
+    <p class="mt-2">Nenhum saldo ou pedido possui valor monetário real.</p>
+  </footer>
+  <div id="toast" class="fixed bottom-6 right-6 hidden max-w-sm rounded-xl bg-ink px-5 py-3 text-sm text-white shadow-xl" role="status"></div>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
